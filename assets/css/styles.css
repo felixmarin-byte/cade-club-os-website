@@ -1099,3 +1099,743 @@ a {
     gap: 8px;
   }
 }
+
+.legal-header {
+  background: #07111f;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.legal-navbar {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legal-navbar .brand {
+  color: white;
+}
+
+.back-link {
+  color: #cbd5e1;
+  font-size: 13px;
+  transition: .2s ease;
+}
+
+.back-link:hover {
+  color: white;
+}
+
+.legal-page {
+  background: #f7f9fc;
+}
+
+.legal-hero {
+  padding: 90px 0 65px;
+  color: white;
+  background:
+    radial-gradient(
+      circle at 80% 0%,
+      rgba(34,211,238,.10),
+      transparent 32%
+    ),
+    linear-gradient(
+      145deg,
+      #07111f,
+      #0b1b2d
+    );
+}
+
+.legal-container {
+  max-width: 980px;
+}
+
+.legal-hero h1 {
+  max-width: 760px;
+  font-family: Manrope, sans-serif;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.legal-hero p {
+  max-width: 680px;
+  margin-top: 18px;
+  color: #a9b7c8;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.support-card {
+  min-height: 220px;
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 12px 35px rgba(15,23,42,.05);
+}
+
+.support-number {
+  display: inline-block;
+  margin-bottom: 34px;
+  color: var(--blue);
+  font-family: Manrope, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.support-card h2 {
+  margin-bottom: 10px;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+}
+
+.support-card p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.support-contact-section {
+  padding: 0 0 100px;
+  background: #f7f9fc;
+}
+
+.support-contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 42px;
+  border-radius: 22px;
+  color: white;
+  background:
+    radial-gradient(
+      circle at 85% 0%,
+      rgba(34,211,238,.12),
+      transparent 35%
+    ),
+    #081524;
+}
+
+.support-contact-card h2 {
+  margin-bottom: 10px;
+  font-family: Manrope, sans-serif;
+  font-size: 32px;
+  letter-spacing: -.025em;
+}
+
+.support-contact-card p {
+  max-width: 620px;
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.support-contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 220px;
+}
+
+.button.secondary-dark {
+  color: white;
+  background: #2563eb;
+}
+
+.button.outline-dark {
+  color: #dbeafe;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
+}
+
+@media (max-width: 760px) {
+
+  .legal-navbar {
+    min-height: 72px;
+  }
+
+  .back-link {
+    font-size: 12px;
+  }
+
+  .legal-hero {
+    padding: 72px 0 50px;
+  }
+
+  .legal-hero h1 {
+    font-size: 38px;
+  }
+
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .support-card {
+    min-height: auto;
+  }
+
+  .support-contact-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 24px;
+  }
+
+  .support-contact-card h2 {
+    font-size: 28px;
+  }
+
+  .support-contact-actions {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .support-contact-actions .button {
+    width: 100%;
+  }
+
+}
+
+/* =========================================================
+   CADE CLUB OS — BRAND SYSTEM v1
+   Premium Sports-Tech Identity
+   ========================================================= */
+
+:root {
+  /* Brand */
+  --cade-navy: #07111F;
+  --cade-surface: #0B1728;
+  --cade-surface-elevated: #102238;
+
+  --cade-blue: #2563EB;
+  --cade-blue-bright: #2F7BFF;
+  --cade-cyan: #22D3EE;
+
+  /* Neutral */
+  --cade-ice: #F7F9FC;
+  --cade-white: #FFFFFF;
+  --cade-graphite: #0F172A;
+  --cade-slate: #64748B;
+  --cade-muted: #94A3B8;
+  --cade-border: #E2E8F0;
+
+  /* Status */
+  --cade-success: #10B981;
+  --cade-warning: #F59E0B;
+  --cade-danger: #EF4444;
+  --cade-info: #0EA5E9;
+
+  /* Radius */
+  --cade-radius-sm: 10px;
+  --cade-radius-md: 14px;
+  --cade-radius-lg: 20px;
+  --cade-radius-xl: 28px;
+
+  /* Shadows */
+  --cade-shadow-sm:
+    0 6px 20px rgba(15, 23, 42, .05);
+
+  --cade-shadow-md:
+    0 16px 42px rgba(15, 23, 42, .08);
+
+  --cade-shadow-dark:
+    0 26px 70px rgba(0, 0, 0, .34);
+
+  /* Legacy mapping */
+  --navy: var(--cade-navy);
+  --navy-2: var(--cade-surface);
+  --navy-3: var(--cade-surface-elevated);
+
+  --blue: var(--cade-blue);
+  --blue-light: var(--cade-blue-bright);
+  --cyan: var(--cade-cyan);
+
+  --white: var(--cade-white);
+
+  --bg: var(--cade-ice);
+  --bg-soft: #EFF4F8;
+
+  --text: var(--cade-graphite);
+  --muted: var(--cade-slate);
+
+  --border: var(--cade-border);
+}
+
+/* =========================================================
+   CADE — TYPOGRAPHY & COMPONENT REFINEMENT
+   ========================================================= */
+
+body {
+  font-family: Inter, sans-serif;
+  background: var(--cade-ice);
+  color: var(--cade-graphite);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.brand-text strong {
+  font-family: Manrope, sans-serif;
+}
+
+h1,
+h2 {
+  letter-spacing: -.035em;
+}
+
+.button {
+  border-radius: var(--cade-radius-md);
+  font-weight: 600;
+  letter-spacing: -.01em;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background-color .2s ease,
+    border-color .2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button.primary {
+  background:
+    linear-gradient(
+      135deg,
+      var(--cade-blue) 0%,
+      var(--cade-blue-bright) 58%,
+      #2189FF 100%
+    );
+
+  box-shadow:
+    0 14px 34px rgba(37, 99, 235, .28);
+}
+
+.button.primary:hover {
+  box-shadow:
+    0 18px 42px rgba(37, 99, 235, .36);
+}
+
+.feature,
+.support-card {
+  border-color: rgba(148, 163, 184, .22);
+  border-radius: var(--cade-radius-lg);
+  box-shadow: var(--cade-shadow-sm);
+}
+
+.feature:hover,
+.support-card:hover {
+  border-color: rgba(37, 99, 235, .18);
+  box-shadow: var(--cade-shadow-md);
+}
+
+.module-grid span {
+  border-color: rgba(148, 163, 184, .22);
+  border-radius: var(--cade-radius-md);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, .025);
+}
+
+.preview-window {
+  border-radius: var(--cade-radius-lg);
+  box-shadow: var(--cade-shadow-dark);
+}
+
+/* =========================================================
+   CADE — PREMIUM HERO & NAVIGATION
+   ========================================================= */
+
+.header {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(7,17,31,.72),
+      rgba(7,17,31,0)
+    );
+}
+
+.navbar {
+  height: 88px;
+}
+
+.nav {
+  gap: 30px;
+}
+
+.nav a {
+  position: relative;
+  color: #B8C4D3;
+  font-weight: 500;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--cade-blue),
+    var(--cade-cyan)
+  );
+  transition: width .22s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav-button {
+  border-color: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.055);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.04);
+}
+
+.hero {
+  min-height: 820px;
+  background:
+    radial-gradient(
+      circle at 76% 35%,
+      rgba(37,99,235,.20),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 18% 82%,
+      rgba(34,211,238,.08),
+      transparent 28%
+    ),
+    linear-gradient(
+      140deg,
+      #050D18 0%,
+      #07111F 45%,
+      #0B1728 100%
+    );
+}
+
+.hero::before {
+  opacity: .065;
+  background-size: 76px 76px;
+}
+
+.hero-copy {
+  max-width: 620px;
+}
+
+.badge {
+  border-color: rgba(34,211,238,.18);
+  background: rgba(34,211,238,.055);
+  color: #C6D4E3;
+}
+
+.hero h1 {
+  max-width: 700px;
+  font-size: clamp(48px, 5.6vw, 78px);
+  line-height: 1.01;
+}
+
+.hero h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      #7DD3FC 0%,
+      #22D3EE 50%,
+      #4F8CFF 100%
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-copy > p {
+  max-width: 600px;
+  color: #A9B7C8;
+  font-size: 17px;
+}
+
+.hero-tags {
+  margin-top: 30px;
+}
+
+.hero-tags span {
+  color: #8091A5;
+}
+
+.product-preview {
+  transform: perspective(1200px) rotateY(-2deg);
+}
+
+.preview-window {
+  border-color: rgba(255,255,255,.10);
+  background: #0B1728;
+}
+
+/* =========================================================
+   CADE — BRAND MARK
+   ========================================================= */
+
+.brand-icon {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(37,99,235,.13),
+      rgba(34,211,238,.055)
+    );
+
+  border: 1px solid rgba(125,211,252,.16);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.05),
+    0 8px 26px rgba(37,99,235,.13);
+}
+
+.brand-icon::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(34,211,238,.16),
+      transparent 58%
+    );
+
+  pointer-events: none;
+}
+
+.brand-icon img {
+  position: relative;
+  z-index: 2;
+
+  width: 34px;
+  height: 34px;
+
+  display: block;
+  object-fit: contain;
+}
+
+.brand:hover .brand-icon {
+  border-color: rgba(34,211,238,.28);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.06),
+    0 10px 32px rgba(37,99,235,.20);
+}
+
+.brand-text strong {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.brand-text span {
+  color: #94A3B8;
+  opacity: 1;
+}
+
+.footer-brand .brand-icon {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(37,99,235,.10),
+      rgba(34,211,238,.04)
+    );
+}
+
+
+/* =========================================================
+   CADE — HERO RESPONSIVE FIX
+   ========================================================= */
+
+.hero h1 {
+  line-height: 1.08;
+  overflow: visible;
+}
+
+.hero h1 span {
+  padding-bottom: .08em;
+  line-height: 1.12;
+}
+
+@media (max-width: 650px) {
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 54px);
+    line-height: 1.07;
+    letter-spacing: -.04em;
+  }
+
+  .hero h1 span {
+    line-height: 1.12;
+    padding-bottom: .10em;
+  }
+
+  .hero-copy {
+    overflow: visible;
+  }
+
+}
+
+/* =========================================================
+   CADE — LEGAL CONTENT SYSTEM
+   ========================================================= */
+
+.legal-status {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 26px;
+  padding: 9px 14px;
+
+  border: 1px solid rgba(37,99,235,.18);
+  border-radius: 999px;
+
+  background: rgba(37,99,235,.07);
+
+  color: var(--cade-blue);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+
+.legal-content {
+  max-width: 860px;
+}
+
+.legal-section {
+  position: relative;
+  padding: 38px 0;
+
+  border-bottom: 1px solid var(--cade-border);
+}
+
+.legal-section:last-child {
+  border-bottom: 0;
+}
+
+.legal-number {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: var(--cade-blue);
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .10em;
+}
+
+.legal-section h2 {
+  margin: 0 0 16px;
+
+  color: var(--cade-graphite);
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.2;
+}
+
+.legal-section p {
+  margin: 0 0 14px;
+
+  color: var(--cade-slate);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.soft-section {
+  background: #F1F5F9;
+}
+
+.light-section {
+  background: #FFFFFF;
+}
+
+@media (max-width: 760px) {
+
+  .legal-section {
+    padding: 30px 0;
+  }
+
+  .legal-section p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .legal-status {
+    font-size: 11px;
+  }
+
+}
+
+/* =========================================================
+   CADE — ORIGINAL BRAND MASTER
+   ========================================================= */
+
+.brand-icon {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+
+  overflow: visible;
+}
+
+.brand-icon::after {
+  display: none;
+}
+
+.brand-icon img {
+  width: 48px;
+  height: 48px;
+
+  display: block;
+  object-fit: contain;
+
+  border-radius: 12px;
+}
+
+.brand:hover .brand-icon {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 14px;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-brand-link .brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
