@@ -1839,3 +1839,110 @@ h2 {
   flex-direction: column;
 }
 
+
+/* =========================================================
+   CADE — FOOTER SPACING REFINEMENT
+   ========================================================= */
+
+.footer {
+  padding-top: 56px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: minmax(280px, 1.2fr) minmax(320px, .8fr);
+  gap: 64px;
+  align-items: start;
+  padding-bottom: 42px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-brand-link {
+  margin-bottom: 22px;
+}
+
+.footer-brand > p {
+  margin: 0;
+  max-width: 460px;
+
+  line-height: 1.65;
+  color: #CBD5E1;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  gap: 48px;
+}
+
+.footer-links > div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links strong {
+  margin-bottom: 6px;
+}
+
+.footer-bottom {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .footer-links {
+    max-width: 460px;
+  }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding-top: 42px;
+  }
+
+  .footer-inner {
+    gap: 36px;
+    padding-bottom: 34px;
+  }
+
+  .footer-brand-link {
+    margin-bottom: 18px;
+  }
+
+  .footer-brand > p {
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .footer-links > div {
+    gap: 13px;
+  }
+
+  .footer-bottom {
+    padding-top: 18px;
+    padding-bottom: 22px;
+  }
+
+}
