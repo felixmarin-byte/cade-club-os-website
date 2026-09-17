@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#102238"/>
+    <stop offset=".58" stop-color="#07111F"/>
+    <stop offset="1" stop-color="#030A12"/>
+  </linearGradient>
+
+  <linearGradient id="cGrad" x1=".12" y1=".15" x2=".88" y2=".9">
+    <stop offset="0" stop-color="#EAFDFF"/>
+    <stop offset=".18" stop-color="#73F2FF"/>
+    <stop offset=".46" stop-color="#22D3EE"/>
+    <stop offset=".72" stop-color="#2F7BFF"/>
+    <stop offset="1" stop-color="#0A2E9A"/>
+  </linearGradient>
+
+  <linearGradient id="arrowGrad" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#2563EB"/>
+    <stop offset=".5" stop-color="#22D3EE"/>
+    <stop offset="1" stop-color="#D9FDFF"/>
+  </linearGradient>
+
+  <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#19E3C4"/>
+    <stop offset=".55" stop-color="#0B8E8B"/>
+    <stop offset="1" stop-color="#063A4B"/>
+  </linearGradient>
+</defs>
+
+<rect x="70" y="70" width="884" height="884" rx="176"
+      fill="url(#bg)" stroke="#22D3EE" stroke-width="7"/>
+
+<rect x="86" y="86" width="852" height="852" rx="160"
+      fill="none" stroke="#2563EB" stroke-width="3" opacity=".7"/>
+
+<path
+  d="M725 245
+     C660 178 568 142 470 150
+     C307 164 183 299 183 466
+     C183 655 329 810 516 810
+     C625 810 720 763 786 688"
+  fill="none"
+  stroke="url(#cGrad)"
+  stroke-width="142"
+  stroke-linejoin="round"/>
+
+<path
+  d="M704 258
+     C648 203 572 176 488 183
+     C343 195 233 315 233 466
+     C233 623 354 754 510 758
+     C604 760 689 722 748 660"
+  fill="none"
+  stroke="#D9FDFF"
+  stroke-width="10"
+  stroke-linecap="round"
+  opacity=".82"/>
+
+<g>
+  <ellipse cx="512" cy="492" rx="202" ry="104"
+           fill="#05131E" stroke="#22D3EE" stroke-width="7"/>
+
+  <ellipse cx="512" cy="482" rx="175" ry="84"
+           fill="none" stroke="#2F7BFF" stroke-width="18"/>
+
+  <ellipse cx="512" cy="475" rx="149" ry="67"
+           fill="none" stroke="#22D3EE" stroke-width="7"/>
+
+  <path d="M345 462 Q512 378 679 462"
+        fill="none" stroke="#7CF6FF" stroke-width="12"/>
+
+  <path d="M361 434 Q512 362 663 434"
+        fill="none" stroke="#2563EB" stroke-width="12"/>
+
+  <path d="M384 409 Q512 348 640 409"
+        fill="none" stroke="#22D3EE" stroke-width="6"/>
+
+  <ellipse cx="512" cy="519" rx="125" ry="51"
+           fill="url(#field)" stroke="#22D3EE" stroke-width="6"/>
+
+  <path d="M417 519 H607 M512 477 V561"
+        stroke="#95FBFF" stroke-width="4"/>
+
+  <ellipse cx="512" cy="519" rx="27" ry="14"
+           fill="none" stroke="#95FBFF" stroke-width="4"/>
+</g>
+
+<path
+  d="M594 690
+     C700 662 765 605 804 526
+     C829 476 842 423 850 372"
+  fill="none"
+  stroke="url(#arrowGrad)"
+  stroke-width="62"
+  stroke-linecap="round"/>
+
+<path
+  d="M812 356 L888 330 L860 407 Z"
+  fill="url(#arrowGrad)"
+  stroke="#D9FDFF"
+  stroke-width="5"/>
+</svg>
