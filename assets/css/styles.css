@@ -1946,3 +1946,67 @@ h2 {
   }
 
 }
+
+/* =========================================================
+   CADE — FINAL WORDMARK
+   ========================================================= */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+}
+
+.brand-text strong {
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: #FFFFFF;
+}
+
+.brand-text span {
+  margin-top: 5px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+
+  color: #22D3EE;
+}
+
+.footer-brand-link .brand-text strong {
+  color: #FFFFFF;
+}
+
+.footer-brand-link .brand-text span {
+  color: #22D3EE;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+  }
+
+  .brand-text span {
+    font-size: 9px;
+    letter-spacing: .18em;
+  }
+
+}
